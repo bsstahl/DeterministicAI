@@ -1,0 +1,12 @@
+{
+  "name": "Pete's Pottery Paradise (JavaScript)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=petes-pottery-paradise-js-node-modules,target=/workspace/node_modules,type=volume"
+  ],
+  "postCreateCommand": "npm ci"
+}

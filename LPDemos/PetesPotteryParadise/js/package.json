@@ -1,0 +1,16 @@
+{
+  "name": "petes-pottery-paradise",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node ./cmd/petes-pottery-paradise.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "or-tools-wasm": "1.0.0"
+  }
+}

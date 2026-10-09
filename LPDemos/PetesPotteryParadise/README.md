@@ -1,8 +1,7 @@
 # Pete's Pottery Paradise
 
 This demo finds the revenue-maximizing production plan for Pete's Pottery
-Paradise. Implementations are grouped by language so additional versions can
-be added alongside `go/` (for example, `csharp/`).
+Paradise. Implementations are grouped by language.
 
 ## Problem
 
@@ -36,3 +35,11 @@ protobuf bindings, and installs the C++ runtime for the official Go CP-SAT
 binding. A container-only Go workspace uses that local checkout because the
 upstream OR-Tools source module is too large to download through the Go module
 proxy. No Go or OR-Tools installation is required on the host.
+
+## JavaScript implementation
+
+The [`js/`](js/) version uses the community-maintained `or-tools-wasm` package
+to run the CP-SAT model in WebAssembly. Google does not provide or support this
+JavaScript binding; see the [JavaScript demo README](js/README.md) for the
+dependency caveat and setup instructions. Node.js, npm, and packages are
+contained in its Dev Container.
