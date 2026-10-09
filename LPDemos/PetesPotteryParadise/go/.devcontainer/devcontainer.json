@@ -1,0 +1,21 @@
+{
+  "name": "Pete's Pottery Paradise (Go)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ],
+      "settings": {
+        "go.lintTool": "staticcheck",
+        "go.lintOnSave": "workspace",
+        "go.vetOnSave": "workspace"
+      ]
+    }
+  },
+  "postCreateCommand": "make check"
+}

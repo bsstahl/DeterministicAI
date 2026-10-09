@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (checks + build)",
+      "type": "shell",
+      "command": "make",
+      "args": ["build"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$go"]
+    },
+    {
+      "label": "Run (checks + run)",
+      "type": "shell",
+      "command": "make",
+      "args": ["run"],
+      "problemMatcher": ["$go"]
+    },
+    {
+      "label": "Check Go quality",
+      "type": "shell",
+      "command": "make",
+      "args": ["check"],
+      "problemMatcher": ["$go"]
+    }
+  ]
+}
